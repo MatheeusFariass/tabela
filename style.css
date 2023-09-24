@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+
+nav h1{
+    background-color: green;
+    text-align: center;
+    padding: 50px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+thead tr {
+    background-color: #f0f0f0;
+}
+
+thead td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+td img {
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    thead {
+        display: none;
+    }
+    tr {
+        display: block;
+        border-bottom: 1px solid #ccc;
+    }
+    td {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    td:last-child {
+        border-bottom: none;
+    }
+    td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
+.clube{
+    text-align: center;
+}
+
+td{
+    border-bottom: solid 1px;
+    border-color: #ccc;
+    
+}
+/* legenda da parte lateral da pagina */
+
+.libertadores{
+    border-left: solid 5px blue;
+ }
+
+.prelibertadores{
+    border-left: solid 5px orangered;
+}
+.sulamericana{
+    border-left: solid 5px green;
+}
+
+.Semclassificação{
+    border-left: solid 5px white;
+}
+
+.rebaixados{
+    border-left: solid 5px red;
+}
+
+/* legenda do rodapé da pagina */
+
+.legendalibertadores{
+
+    border-right: solid 5px blue;
+    padding-left:100;
+}
+
+.legendaprelibetadores{
+    border-right: solid 5px orangered;
+    padding-left:100;
+}
+
+.legendasulamericana{
+    border-right: solid 5px green;
+    padding-left:100;
+}
+
+.legendarebaixamento{
+    border-right: solid 5px red;
+    padding-left:100;
+}
+
+
+.final td {
+    text-align: left;
+}
